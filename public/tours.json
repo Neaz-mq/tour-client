@@ -23,7 +23,7 @@
 
      "name": "Exploring Chittagong City",
 
-     "description": "Chittagong city is full of different types of commercial activities. Those are Bazars/Markets for kitchen supplies, fish markets.",
+     "description": "Chittagong city is full of different types of commercial activities. Those are Bazars/Markets for kitchen supplies, fish markets. Really amazing city",
 
      "button": "View Detail",
 
@@ -38,9 +38,9 @@
      
      "image": "https://i.ibb.co/fNSN9FC/pexels-alexas-fotos-7534480.jpg",
 
-     "name": "Exploring Rangamati",
+     "name": "Exploring Sundarbans",
 
-     "description": "undarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal",
+     "description": "Sundarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal",
 
      "button": "View Detail",
 
@@ -66,6 +66,41 @@
      "provider": "Ali",
 
      "price" : "120"
+  },
+
+  {
+    "id": 5,   
+     
+     "image": "https://i.ibb.co/wBf1Cvy/pexels-yugixel-392100.jpg",
+
+     "name": "Beauty of Sylhet",
+
+     "description": "Sylhet is a city in eastern Bangladesh, on the Surma River. It’s known for its Sufi shrines, like the ornate tomb and mosque",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/zRgkFN1/pexels-stefan-stefancik-91227.jpg",
+
+     "provider": "Rifat",
+
+     "price" : "90"
+  },
+  {
+    "id": 6,   
+     
+     "image": "https://i.ibb.co/Kxnc6mt/pexels-asad-photo-maldives-457882.jpg",
+
+     "name": "Peace of ocean",
+
+     "description": "St Martin’s Island is perfect for tourist who is truly interested in escaping the holds of a modern world. Do not expect to find taxis",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/30yJ0ZP/pexels-daniel-xavier-1212984.jpg",
+
+     "provider": "Umar",
+
+     "price" : "110"
   }
 
  
