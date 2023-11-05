@@ -1,0 +1,72 @@
+[
+    {
+     "id": 1,   
+     
+     "image": "https://i.ibb.co/YjqgQhd/pexels-riku-keto-18893996.jpg",
+
+     "name": "Exploring Rangamati",
+
+     "description": "The Rangamati district of Chittagong, Bangladesh, is a picturesque region known for its lush hills, tranquil lakes, and rich cultural heritage",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/vXhpcM3/pexels-justin-shaifer-1222271.jpg",
+
+     "provider": "Hasin",
+
+     "price" : "20"
+   },
+   {
+    "id": 2,   
+     
+     "image": "https://i.ibb.co/QkyBR0c/pexels-tanvir-khondokar-18583290.jpg",
+
+     "name": "Exploring Chittagong City",
+
+     "description": "Chittagong city is full of different types of commercial activities. Those are Bazars/Markets for kitchen supplies, fish markets.",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/XppCzbQ/pexels-daniel-xavier-1121796.jpg",
+
+     "provider": "Alvi",
+
+     "price" : "40"
+  },
+  {
+    "id": 3,   
+     
+     "image": "https://i.ibb.co/fNSN9FC/pexels-alexas-fotos-7534480.jpg",
+
+     "name": "Exploring Rangamati",
+
+     "description": "undarbans is a mangrove area in the delta formed by the confluence of the Ganges, Brahmaputra and Meghna Rivers in the Bay of Bengal",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/HBP0sGY/pexels-oleksandr-p-1172207.jpg",
+
+     "provider": "Kader",
+
+     "price" : "80"
+  },
+  {
+    "id": 4,   
+     
+     "image": "https://i.ibb.co/HqnY7Cy/pexels-hassan-ahmad-2259636.jpg",
+
+     "name": "Mosque City of Bagerhat",
+
+     "description": "The Mosque City of Bagerhat is a formerly lost city situated in the outskirts of Bagerhat, at the meeting point of the Ganges and Brahmaputra rivers",
+
+     "button": "View Detail",
+
+     "providerimg": "https://i.ibb.co/PmLNm1L/pexels-omar-l-pez-1182825.jpg",
+
+     "provider": "Ali",
+
+     "price" : "120"
+  }
+
+ 
+ ]
