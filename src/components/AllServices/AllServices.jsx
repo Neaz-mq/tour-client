@@ -19,6 +19,12 @@ const AllServices = () => {
       <div className="text-center">
         <h2 className="text-5xl font-bold p-14 mb-5" data-aos="zoom-in">All Services</h2>
       </div>
+ <div className="text-center">
+ <div className="join">
+  <input className="input input-bordered join-item" placeholder="Search here...."/>
+  <button className="btn join-item rounded-r-full bg-[#FF444A] text-white">Search</button>
+</div>
+ </div>
       <div className="grid grid-cols-1 md:grid-cols-1 md:ml-52 lg:grid-cols-1 gap-16  lg:mx-8 mx-5 my-12">
 
 
