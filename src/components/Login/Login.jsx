@@ -1,13 +1,30 @@
+import { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AuthContext } from "../../Hook/AuthProvider";
 
 
 const Login = () => {
+
+  const { googleSignIn, logInUser } = useContext(AuthContext);
+  const handleGoogleLogin = () => {
+    googleSignIn().then((result) => console.log(result.user));
+
+  };
     const handleLogin = e => {
         e.preventDefault();
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password);
-
+        
+        logInUser(email, password)
+        .then(result => {
+          console.log(result.user);
+  
+        })
+        .catch(error => {
+          console.error(error);
+        })
        
     }
     return (
@@ -44,9 +61,9 @@ const Login = () => {
               <div className="form-control mt-6">
                 <button   className="btn btn-primary w-1/3">Login</button>
                 <br />
-                <button   className="btn btn-primary w-1/3">Google Login</button>
+                <button onClick={handleGoogleLogin} className="btn btn-secondary"> Google Login</button>
               </div>
-
+              <p className="mt-4 pb-8 lg:text-xl font-semibold">Don't have an account! Please <Link className="text-red-600 font-bold" to="/register">Register</Link></p>
             </div>
           </div>
           </form>

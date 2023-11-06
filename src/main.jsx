@@ -30,6 +30,11 @@ const router = createBrowserRouter([
         element: <AllServices></AllServices>,
       },
       {
+        path: '/tour/:id',
+      
+           
+      },
+      {
         path: '/register',
         element: <Register></Register>,
       },

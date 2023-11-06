@@ -1,6 +1,6 @@
 [
     {
-     "id": 1,   
+      
      
      "image": "https://i.ibb.co/YjqgQhd/pexels-riku-keto-18893996.jpg",
 
@@ -17,7 +17,7 @@
      "price" : "20"
    },
    {
-    "id": 2,   
+    
      
      "image": "https://i.ibb.co/QkyBR0c/pexels-tanvir-khondokar-18583290.jpg",
 
@@ -34,7 +34,7 @@
      "price" : "40"
   },
   {
-    "id": 3,   
+    
      
      "image": "https://i.ibb.co/fNSN9FC/pexels-alexas-fotos-7534480.jpg",
 
@@ -51,7 +51,7 @@
      "price" : "80"
   },
   {
-    "id": 4,   
+   
      
      "image": "https://i.ibb.co/HqnY7Cy/pexels-hassan-ahmad-2259636.jpg",
 
@@ -69,7 +69,7 @@
   },
 
   {
-    "id": 5,   
+    
      
      "image": "https://i.ibb.co/wBf1Cvy/pexels-yugixel-392100.jpg",
 
@@ -86,7 +86,7 @@
      "price" : "90"
   },
   {
-    "id": 6,   
+  
      
      "image": "https://i.ibb.co/Kxnc6mt/pexels-asad-photo-maldives-457882.jpg",
 

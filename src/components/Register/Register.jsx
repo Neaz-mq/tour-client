@@ -49,7 +49,7 @@ const Register = () => {
   }
 
   return (
-    <div className="hero my-14 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+    <div className="hero bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%">
       <div className="hero-content flex-col lg:flex-row-reverse w-2/3  ">
         <form onSubmit={handleRegister}>
           <div className="card flex-shrink-0 w-full  max-w-sm shadow-2xl bg-base-300 px-6 py-7">
