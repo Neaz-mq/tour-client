@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Tour = ({tour}) => {
-    const { id, image, name, description, button, providerimg, provider, price} = tour;
+    const { _id, image, name, description, button, providerimg, provider, price} = tour;
     return (
         <div className="card card-compact  bg-base-100 shadow-xl">
        
@@ -10,7 +10,7 @@ const Tour = ({tour}) => {
        <div className="card-body">
            <h2 className="card-title text-3xl font-semibold ">{name}</h2>
            <p className="text-xl">{description}</p>
-           <Link to={`/tour/${id}`}>
+           <Link to={`/tour/${_id}`}>
            <button className="btn btn-success">{button}</button>
            </Link>
        </div>
