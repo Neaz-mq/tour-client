@@ -7,11 +7,11 @@ const ServiceCard = ({service}) => {
         <figure><img src={photo}alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title">Name: {name}</h2>
-          <p> {title}</p>
-          <p> {email}</p>
-          <p> {price}</p>     
+          <p>Title: {title}</p>
+          <p>Email: {email}</p>
+          <p>Price: ${price}</p>     
           <p> {details}</p>     
-          <p> {area}</p>
+          <p>Area: {area}</p>
            
          
         </div>

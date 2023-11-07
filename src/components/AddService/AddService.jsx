@@ -1,6 +1,8 @@
+import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const AddService = () => {
+    
     const handleAddService = event => {
         event.preventDefault();
 
@@ -132,7 +134,9 @@ const AddService = () => {
            
 
             <div className="form-control md:w-1/2">
+          
                 <input type="submit" value="Add Service" className="btn btn-block mt-10 btn-accent text-xl font-semibold" />
+               
             </div>
         </form>
         </div>

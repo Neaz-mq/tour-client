@@ -16,6 +16,7 @@ import AuthProvider from './Hook/AuthProvider.jsx';
 import TourDetails from './components/TourDetails/TourDetails.jsx';
 import AddService from './components/AddService/AddService.jsx';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails.jsx';
+import ServiceCard from './components/ServiceCard/ServiceCard.jsx';
 
 
 const router = createBrowserRouter([
@@ -44,7 +45,7 @@ const router = createBrowserRouter([
         element: <AddService></AddService>
       },
       {
-        path: '/service/:id',
+        path: '/service/tour',
         element: (
            
             <ServiceDetails></ServiceDetails>
@@ -52,6 +53,7 @@ const router = createBrowserRouter([
         ),
         loader: () => fetch('http://localhost:5000/service')
       },
+     
       {
         path: '/register',
         element: <Register></Register>,
