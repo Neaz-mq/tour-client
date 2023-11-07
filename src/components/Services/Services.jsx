@@ -24,7 +24,7 @@ const Services = () => {
         <div className="text-center">
           <h2 className="text-5xl font-bold p-14 mb-5" data-aos="zoom-in">Popular Services</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 md:ml-52 lg:grid-cols-2 gap-10  lg:mx-8 mx-5 my-12">
+        <div className="grid grid-cols-1 md:grid-cols-1  lg:grid-cols-2 gap-10  lg:mx-8 mx-5 md:ml-16 my-12">
           {tours.slice(0, dataLength).map((tour) => (
             <Tour  key={tour.id} tour={tour}></Tour>
         

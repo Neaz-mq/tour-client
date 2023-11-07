@@ -55,7 +55,7 @@ const Header = () => {
                     {links}
                 </ul>
             </div>
-            <a href='/'><img className='w-24 lg:ml-6 md:ml-64 ml-24' src="https://i.ibb.co/sKprTQZ/Screenshot-1-removebg-preview.png" alt="" /></a>
+            <a href='/'><img className='w-24 lg:ml-6 md:ml-64 ml-20' src="https://i.ibb.co/sKprTQZ/Screenshot-1-removebg-preview.png" alt="" /></a>
         </div>
         <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-white text-base font-semibold">{links}</ul>
