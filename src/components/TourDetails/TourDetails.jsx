@@ -3,9 +3,39 @@ import { useLoaderData } from "react-router-dom";
 
 const TourDetails = () => {
 
+  
+
+
     const tour = useLoaderData()
     const {price, image, name, description, providerimg, provider
     } = tour;
+
+
+    const handleUpdateService = event => {
+      event.preventDefault();
+
+
+      const form = event.target;
+      const photo = form.photo.value;
+      const title = form.title.value;
+      const name = form.name.value;
+      const email = form.email.value;
+      const price = form.price.value;
+      const area = form.area.value;
+      const details = form.details.value;
+    
+    
+
+
+      const updateService = { photo, name, title, email, price, details, area}
+
+      console.log(updateService);
+
+
+    }
+
+
+
     return (
         <div>
            <div className="card lg:card-side bg-base-100 shadow-xl ml-14 px-20 py-20">
@@ -20,14 +50,114 @@ const TourDetails = () => {
 <button className="btn btn-primary" onClick={()=>document.getElementById('my_modal_5').showModal()}>Book Now</button>
 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
   <div className="modal-box">
-    <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">Press ESC key or click the button below to close</p>
-    <div className="modal-action">
+  <div>
+        <h2 className="text-3xl font-extrabold text-center">Confirm Purchase</h2>
+        <div>
+        <form onSubmit={handleUpdateService}>
+            
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold"> Service Name</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="text" name="title"   placeholder="Service name" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">Image</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="text" name="photo"  placeholder="Image url" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+           
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">Service Provider Email</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="email" name="email"  placeholder="Email" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">User Email</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="email" name="email"  placeholder="User Email" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">Service Taking date</span>
+                    </label>
+                    <label className="input-group">
+                     
+                        <input type="date" name="date"  placeholder="Date" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">Instruction</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="text" name="instruction" placeholder="Address" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+            <div className="md:flex">
+                <div className="form-control md:w-1/2">
+                    <label className="label">
+                        <span className="label-text text-xl font-semibold">Price</span>
+                    </label>
+                    <label className="input-group">
+
+                        <input type="text" name="price" placeholder="Price" className="input input-bordered w-full" />
+                    </label>
+                </div>
+            </div>
+           
+            
+          
+           
+
+            <div className="flex justify-between items-center">
+            <div className="form-control md:w-1/2">
+          
+        <a href="/schedule"><input type="submit" value="Purchase" className="btn btn-block mt-10 btn-accent text-xl font-semibold" /></a>
+
+      
+         
+      </div>
+      <div>
       <form method="dialog">
         {/* if there is a button in form, it will close the modal */}
-        <button className="btn">Close</button>
+        <button className="btn btn-error text-white mt-10">Close</button>
       </form>
+      </div>
+            </div>
+        </form>
+        </div>
     </div>
+    
   </div>
 </dialog>
   </div>

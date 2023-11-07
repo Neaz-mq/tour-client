@@ -16,8 +16,10 @@ import AuthProvider from './Hook/AuthProvider.jsx';
 import TourDetails from './components/TourDetails/TourDetails.jsx';
 import AddService from './components/AddService/AddService.jsx';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails.jsx';
-import ServiceCard from './components/ServiceCard/ServiceCard.jsx';
+
 import UpdateService from './components/UpdateService/UpdateService.jsx';
+import PrivateRoute from './utility/PrivateRoute.jsx';
+
 
 
 const router = createBrowserRouter([
@@ -36,20 +38,29 @@ const router = createBrowserRouter([
       },
       {
         path: '/tour/:id',
-        element: <TourDetails></TourDetails>,
+        element: (
+          <PrivateRoute>
+         <TourDetails></TourDetails>
+        </PrivateRoute>
+        ), 
+       
         loader: ({params}) => fetch(`http://localhost:5000/tours/${params.id}`)
       
            
       },
       {
         path: '/service',
-        element: <AddService></AddService>
+        element: <PrivateRoute>
+          <AddService></AddService>
+        </PrivateRoute>
       },
       {
         path: '/service/tour',
         element: (
            
-            <ServiceDetails></ServiceDetails>
+           <PrivateRoute>
+             <ServiceDetails></ServiceDetails>
+           </PrivateRoute>
            
         ),
         loader: () => fetch('http://localhost:5000/service')
