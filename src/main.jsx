@@ -14,6 +14,7 @@ import Register from './components/Register/Register.jsx';
 import Login from './components/Login/Login.jsx';
 import AuthProvider from './Hook/AuthProvider.jsx';
 import TourDetails from './components/TourDetails/TourDetails.jsx';
+import AddService from './components/AddService/AddService.jsx';
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         loader: ({params}) => fetch(`http://localhost:5000/tours/${params.id}`)
       
            
+      },
+      {
+        path: '/service',
+        element: <AddService></AddService>
       },
       {
         path: '/register',
