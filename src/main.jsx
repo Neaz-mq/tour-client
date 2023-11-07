@@ -17,6 +17,7 @@ import TourDetails from './components/TourDetails/TourDetails.jsx';
 import AddService from './components/AddService/AddService.jsx';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails.jsx';
 import ServiceCard from './components/ServiceCard/ServiceCard.jsx';
+import UpdateService from './components/UpdateService/UpdateService.jsx';
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,12 @@ const router = createBrowserRouter([
            
         ),
         loader: () => fetch('http://localhost:5000/service')
+      },
+
+      {
+        path: '/updateService/:id',
+        element: <UpdateService></UpdateService>,
+        loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
       },
      
       {
