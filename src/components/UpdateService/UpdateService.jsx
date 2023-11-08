@@ -28,7 +28,7 @@ const UpdateService = () => {
 
          // send data to the server
 
-         fetch(`http://localhost:5000/service/${_id}`, {
+         fetch(`https://tour-guide-server-azure.vercel.app/service/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

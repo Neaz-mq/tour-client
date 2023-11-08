@@ -11,7 +11,7 @@ const Services = () => {
   
     
     useEffect(() => {
-      fetch('http://localhost:5000/tours')
+      fetch('https://tour-guide-server-azure.vercel.app/tours')
         .then((res) => res.json())
         .then((data) => setTours(data));
     }, []);

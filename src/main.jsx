@@ -44,7 +44,7 @@ const router = createBrowserRouter([
         </PrivateRoute>
         ), 
        
-        loader: ({params}) => fetch(`http://localhost:5000/tours/${params.id}`)
+        loader: ({params}) => fetch(`https://tour-guide-server-azure.vercel.app/tours/${params.id}`)
       
            
       },
@@ -63,13 +63,13 @@ const router = createBrowserRouter([
            </PrivateRoute>
            
         ),
-        loader: () => fetch('http://localhost:5000/service')
+        loader: () => fetch('https://tour-guide-server-azure.vercel.app/service')
       },
 
       {
         path: '/updateService/:id',
         element: <UpdateService></UpdateService>,
-        loader: ({params}) => fetch(`http://localhost:5000/service/${params.id}`)
+        loader: ({params}) => fetch(`https://tour-guide-server-azure.vercel.app/service/${params.id}`)
       },
      
       {

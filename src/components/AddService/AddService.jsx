@@ -27,7 +27,7 @@ const AddService = () => {
 
         // send data to the server
 
-        fetch('http://localhost:5000/service', {
+        fetch('https://tour-guide-server-azure.vercel.app/service', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
